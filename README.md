@@ -3,3 +3,4 @@
 ## Structure
 
 - /client — UI
+- /server - HTTP Server

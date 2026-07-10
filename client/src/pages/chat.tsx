@@ -19,7 +19,7 @@ export const Chat = () => {
 
     useEffect(() => {
         const getHelloWorld = async () => {
-            const result = await axios.get('http://' + location.hostname + ':8080')
+            const result = await axios.get(import.meta.env.VITE_API_ROUTE + '/api/v0/hello')
             setData(result.data)
         }
         void getHelloWorld()

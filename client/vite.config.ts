@@ -19,6 +19,9 @@ export default defineConfig({
         })
     ],
     test: vitestConfig,
+    server: {
+        port: 7070
+    },
     resolve: {
         alias: {
             '@components': path.resolve(__dirname, './src/components')

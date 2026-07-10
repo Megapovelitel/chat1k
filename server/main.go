@@ -47,6 +47,11 @@ func newRouter(staticDir string, logger *slog.Logger) http.Handler {
 		http.Error(w, "404 page not found", http.StatusNotFound)
 	})
 
+	r.Get("/", func(w http.ResponseWriter, _ *http.Request) {
+		w.Header().Set("Content-Type", "application/json")
+		w.Write([]byte(`{"message":"hello world"}`))
+	})
+
 	r.Handle("/static/*", http.StripPrefix("/static/",
 		http.FileServer(http.Dir(staticDir))))
 

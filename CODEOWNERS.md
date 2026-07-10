@@ -1,2 +1,1 @@
-@Megapovelitel
-@pavels-v
+* @Megapovelitel @pavels-v

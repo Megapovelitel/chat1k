@@ -1,12 +1,12 @@
 import { AppLayout } from '@components/layout'
 import { AntdConfigProvider } from '@components/antd-config-provider'
-import { Chat } from './pages/chat'
+import { ChatPage } from './pages/chat'
 
 function App() {
     return (
         <AntdConfigProvider>
             <AppLayout>
-                <Chat />
+                <ChatPage />
             </AppLayout>
         </AntdConfigProvider>
     )
